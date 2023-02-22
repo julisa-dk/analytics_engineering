@@ -1,0 +1,58 @@
+version: 2
+
+sources:
+    - name: staging
+      #For bigquery:
+      database: serene-column-375413
+      schema: greentaxiset
+
+      tables:
+        - name: greendataset
+        - name: yellowdataset
+       # freshness:
+           # error_after: {count: 6, period: hour}
+            
+models:
+    - name: stg_green_tripdata
+      columns:
+          - name: tripid
+          - name: VendorID 
+          - name: pickup_datetime 
+          - name: dropoff_datetime 
+          - name: Passenger_count 
+          - name: Trip_distance 
+          - name: Pickup_locationid
+          - name: dropoff_locationid 
+          - name: RateCodeID
+          - name: Store_and_fwd_flag 
+          - name: Dropoff_longitude
+          - name: Dropoff_latitude
+          - name: Payment_type
+          - name: payment_type_description
+          - name: Fare_amount
+          - name: Improvement_surcharge
+          - name: Tip_amount 
+          - name: Tolls_amount
+          - name: Total_amount   
+
+    - name: stg_yellow_tripdata
+      columns:
+          - name: tripid
+          - name: VendorID 
+          - name: pickup_datetime 
+          - name: dropoff_datetime 
+          - name: Passenger_count 
+          - name: Trip_distance 
+          - name: Pickup_locationid
+          - name: dropoff_locationid 
+          - name: RateCodeID
+          - name: Store_and_fwd_flag 
+          - name: Dropoff_longitude 
+          - name: Dropoff_latitude
+          - name: Payment_type
+          - name: payment_type_description
+          - name: Fare_amount
+          - name: Improvement_surcharge 
+          - name: Tip_amount
+          - name: Tolls_amount 
+          - name: Total_amount          
