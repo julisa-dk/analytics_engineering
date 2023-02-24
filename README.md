@@ -1,5 +1,8 @@
 Welcome to your new dbt project!
 
+<div id="header" align="center">
+  <img src="report.png"/>
+</div>
 ### Using the starter project
 
 Try running the following commands:
