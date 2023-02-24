@@ -1,8 +1,10 @@
-Welcome to your new dbt project!
+<h3 align="center"> Welcome to your new dbt project! </h3>
 
 <div id="header" align="center">
   <img src="report.png"/>
 </div>
+
+<div>
 ### Using the starter project
 
 Try running the following commands:
@@ -16,3 +18,4 @@ Try running the following commands:
 - Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+</div>
