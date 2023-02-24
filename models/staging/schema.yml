@@ -9,6 +9,7 @@ sources:
       tables:
         - name: greendataset
         - name: yellowdataset
+        - name: bqtable
        # freshness:
            # error_after: {count: 6, period: hour}
             
@@ -55,4 +56,16 @@ models:
           - name: Improvement_surcharge 
           - name: Tip_amount
           - name: Tolls_amount 
-          - name: Total_amount          
+          - name: Total_amount   
+
+    - name: stg_fhv_tripdata
+      columns:
+          - name: tripid
+          - name: VendorID 
+          - name: Pickup_locationid
+          - name: dropoff_locationid
+          - name: pickup_datetime 
+          - name: dropoff_datetime
+          - name: SR_Flag
+          - name: dispatching_base_num
+          - name: affiliated_base_number
